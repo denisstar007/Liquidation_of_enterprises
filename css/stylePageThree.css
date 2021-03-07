@@ -1,0 +1,219 @@
+.content__grid-title {
+   display: flex;
+   justify-content: center;
+   font-size: 30px;
+   font-weight: 600;
+   margin: 0 0 30px 0;
+}
+.content__grid-undertitle {
+   background-color: rgba(240, 236, 236, 0.4);
+   border-radius: 10px;
+   padding: 15px 20px;
+   font-size: 18px;
+   margin-bottom: 30px;
+   text-indent: 40px;
+   line-height: 22px;
+   letter-spacing: 0.03em;
+}
+.content__grid-question {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 30px;
+   font-size: 24px;
+}
+.content__grid-answer {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-column-gap: 40px;
+   font-size: 18px;
+   letter-spacing: 0.03em;
+   line-height: 22px;
+}
+.content__grid-answerOne{
+   background-color: rgba(240, 236, 236, 0.4);
+   border-radius: 10px;
+   padding: 20px;
+}
+.content__grid-answerOne li{
+   list-style-type: square;
+}
+.content__grid-answerTwo{
+   background-color: rgba(240, 236, 236, 0.4);
+   border-radius: 10px;
+   padding: 20px;
+}
+.content__grid-answerTwo li{
+   list-style-type: square;
+}
+.content__grid-text {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   margin-top: 30px;
+   grid-column-gap: 40px;
+}
+.content__grid-textOne {
+   padding-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+}
+.content__grid-textOne span:nth-child(1){
+   text-align: center;
+   font-size: 20px;
+   font-weight: 600;
+   padding: 20px 10px;
+   letter-spacing: 0.04em;
+   line-height: 24px;
+}
+.content__grid-textOne span:nth-child(2){
+   text-align: justify;
+   line-height: 22px;
+   letter-spacing: 0.04em;
+}
+.content__grid-textTwo {
+   padding: 20px 20px;
+   display: flex;
+   flex-direction: column;
+   background-color: rgba(240, 236, 236, 0.4);
+   border-radius: 10px;
+}
+.content__grid-textTwo span:nth-child(1) {
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 20px;
+   padding-bottom: 20px;
+   font-weight: 600;
+}
+.content__grid-textTwo ul{
+   line-height: 22px;
+   font-size: 18px;
+   letter-spacing: 0.03em;
+}
+.content__grid-textTwo li{
+   list-style-type: square;
+}
+.content__grid-img{
+   padding: 40px;
+}
+.content__grid-img-title {
+   text-transform: uppercase;
+   font-size: 22px;
+   font-weight: 600;
+   padding: 10px 0;
+   margin-bottom: 20px;
+   justify-content: center;
+}
+.content__grid-img-pic {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   grid-gap: 30px 40px;
+}
+.img__pic a{
+   display: flex;
+   justify-content: center;
+   transition: all 0.3s;
+   min-height: 180px;
+   position: relative;
+}
+.img__pic a:hover{
+   transform: scale(1.1);
+}
+.img__pic span{
+   position: absolute;
+   top: 148px;
+   background-color: rgb(79, 67, 250);
+   color: rgb(255, 255, 255);
+   font-size: 18px;
+   padding: 7px 10px;
+   opacity: 0.8;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+   text-align: center;
+   font-weight: 600;
+}
+.img__pic img{
+   max-width: 340px;
+   border-radius: 10px;
+}
+.main__video{
+   outline: none;
+   display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+.video{
+   outline: none;
+}
+
+
+@media all and (max-width: 1089px){
+   .content__grid-img-title{
+      text-align: center;
+   }
+}
+
+@media all and (max-width: 767px){
+   .content__grid{
+      margin-top: 100px;
+   }
+   .content__grid-title{
+      padding-top: 10px;
+   }
+}
+
+@media all and (max-width: 650px){
+   .video{
+      max-height: 270px;
+      max-width: 460px;
+   }
+}
+
+@media all and (max-width: 500px){
+   .video{
+      max-height: 200px;
+      max-width: 360px;
+   }
+   .main__video{
+      margin: 20px 0;
+   }
+   .content__grid-img{
+      padding: 0px;
+   }
+   .content__grid-img-title {
+     text-align: center;
+     margin-top: 20px;
+   }
+   .content__grid-textOne span:nth-child(2){
+      padding: 0 10px;
+   }
+   .content__grid-img-title {
+      line-height: 26px;
+   }
+   .content {
+      text-align: justify;
+   }
+}
+
+@media all and (max-width: 370px){
+   .video{
+      max-height: 140px;
+      max-width: 250px;
+   }
+   .img__pic img{
+      max-width: 300px;
+   }
+   .content__grid-undertitle{
+      margin: 0;
+   }
+   .content__grid-title{
+      font-size: 26px;
+   }
+   .content__grid-question {
+      margin: 15px 0;
+   }
+   .content__grid-img-title{
+      margin-top: 20px;
+   }
+   .img__pic span{
+      font-size: 17px;
+   }
+}
